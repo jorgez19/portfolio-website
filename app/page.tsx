@@ -34,7 +34,6 @@ export default function Home() {
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-20 min-h-screen flex items-center">
         <div className="max-w-4xl mx-auto">
-          {/* Add photo here */}
           <div className="mb-8 flex justify-center md:justify-start">
             <Image
               src="/profilepic.png"
@@ -297,8 +296,8 @@ export default function Home() {
           </div>
           <h2 className="text-5xl font-bold text-slate-100 mb-6">Get In Touch</h2>
           <p className="text-slate-400 text-lg mb-12 leading-relaxed">
-            I'm currently looking for new opportunities. Whether you have a question or just
-            want to say hi, my inbox is always open. I'll get back to you as soon as possible!
+            I'm open to freelance projects and full-time roles focused on backend development.
+            If you need someone to build scalable APIs or optimize your database, let's talk!
           </p>
           <a
             href="mailto:jorgezavala14@hotmail.com"
