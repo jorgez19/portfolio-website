@@ -158,6 +158,112 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* Certifications Section */}
+      <section id="certifications" className="container mx-auto px-4 py-20">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-slate-100 mb-8 flex items-center gap-4">
+            Certifications
+            <span className="flex-1 h-px bg-slate-700 ml-4"></span>
+          </h2>
+          <div className="grid md:grid-cols-2 gap-4">
+            {/* Google Cybersecurity */}
+            <a
+              href="https://coursera.org/share/b8ba05e6f07eae4248817f52bfc4c01f"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-slate-800/50 rounded-lg p-6 border border-slate-700/50 hover:border-red-500/50 transition-all"
+            >
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 flex-shrink-0">
+                  <Image
+                    src="/googlelogo.png"
+                    alt="Google"
+                    width={48}
+                    height={48}
+                    className="object-contain"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-slate-100 mb-1">Google Cybersecurity</h3>
+                  <p className="text-slate-400 text-sm">Coursera Professional Certificate</p>
+                </div>
+              </div>
+            </a>
+
+            {/* AWS DevOps */}
+            <a
+              href="https://coursera.org/share/54cd7643794a39e1d2a5f0af62af168e"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-slate-800/50 rounded-lg p-6 border border-slate-700/50 hover:border-red-500/50 transition-all"
+            >
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 flex-shrink-0">
+                  <Image
+                    src="/awslogo.png"
+                    alt="AWS"
+                    width={48}
+                    height={48}
+                    className="object-contain"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-slate-100 mb-1">DevOps on AWS</h3>
+                  <p className="text-slate-400 text-sm">Coursera Professional Certificate</p>
+                </div>
+              </div>
+            </a>
+
+            {/* Google Data Analytics */}
+            <a
+              href="https://coursera.org/share/80b43fff531c244f7695b4db176aa08d"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-slate-800/50 rounded-lg p-6 border border-slate-700/50 hover:border-red-500/50 transition-all"
+            >
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 flex-shrink-0">
+                  <Image
+                    src="/googlelogo.png"
+                    alt="Google"
+                    width={48}
+                    height={48}
+                    className="object-contain"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-slate-100 mb-1">Google Data Analytics</h3>
+                  <p className="text-slate-400 text-sm">Coursera Professional Certificate</p>
+                </div>
+              </div>
+            </a>
+
+            {/* Google IT Automation with Python */}
+            <a
+              href="https://coursera.org/share/34222449028f74294ec00b1274229936"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-slate-800/50 rounded-lg p-6 border border-slate-700/50 hover:border-red-500/50 transition-all"
+            >
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 flex-shrink-0">
+                  <Image
+                    src="/googlelogo.png"
+                    alt="Google"
+                    width={48}
+                    height={48}
+                    className="object-contain"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-slate-100 mb-1">IT Automation with Python</h3>
+                  <p className="text-slate-400 text-sm">Coursera • Google Certificate</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
 
       {/* Projects Section */}
       <section id="projects" className="container mx-auto px-4 py-20">
