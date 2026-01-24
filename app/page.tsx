@@ -36,27 +36,35 @@ export default function Home() {
       </div>
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-20 min-h-screen flex items-center">
-        <div className="max-w-4xl mx-auto">
-          <div className="mb-8 flex justify-center md:justify-start">
+        <div className="max-w-5xl mx-auto w-full">
+
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-10 mb-8">
+
+            <div className="max-w-3xl">
+              <div className="mb-4">
+                <span className="text-red-500 text-lg font-mono">
+                  Hi, my name is
+                </span>
+              </div>
+
+              <h1 className="text-6xl md:text-7xl font-bold text-slate-100 mb-4">
+                Jorge Zavala.
+              </h1>
+
+              <h2 className="text-4xl md:text-6xl font-bold text-slate-400">
+                I build scalable backend systems and custom AI solutions.
+              </h2>
+            </div>
+
             <Image
               src="/profilepic.png"
               alt="Jorge Zavala"
               width={192}
               height={192}
-              className="rounded-full border-4 border-blue-500/50 object-cover"
+              className="rounded-full border-4 border-blue-500/50 object-cover shrink-0 md:-translate-x-20"
               priority
             />
           </div>
-
-          <div className="mb-6">
-            <span className="text-red-500 text-lg font-mono">Hi, my name is</span>
-          </div>
-          <h1 className="text-6xl md:text-7xl font-bold text-slate-100 mb-4">
-            Jorge Zavala.
-          </h1>
-          <h2 className="text-4xl md:text-6xl font-bold text-slate-400 mb-8">
-            I build scalable backend systems and custom AI solutions.
-          </h2>
           <p className="text-xl text-slate-400 max-w-2xl mb-8 leading-relaxed">
             I'm a backend developer from Montana, USA specializing in databases, APIs, and AI integration.
             I've worked with over 100 clients to design robust architectures that power modern applications.
