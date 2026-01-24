@@ -55,7 +55,7 @@ export default function Home() {
             Jorge Zavala.
           </h1>
           <h2 className="text-4xl md:text-6xl font-bold text-slate-400 mb-8">
-            I build scalable backend systems.
+            I build scalable backend systems and custom AI solutions.
           </h2>
           <p className="text-xl text-slate-400 max-w-2xl mb-8 leading-relaxed">
             I'm a backend developer from Montana, USA specializing in databases, APIs, and AI integration.
