@@ -174,11 +174,12 @@ export default function Home() {
                 {/* Video Demo */}
                 <div className="mb-6 rounded-lg overflow-hidden border border-slate-700/50 max-w-3xl mx-auto">
                   <video
+                    controls
                     autoPlay
                     loop
                     muted
                     playsInline
-                    className="w-full"
+                    className="w-full opacity-80 hover:opacity-100 transition"
                   >
                     <source src="/ImagePromptDemo720.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
