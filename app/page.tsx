@@ -155,6 +155,9 @@ export default function Home() {
                 <span className="text-red-500">▹</span> Docker / AWS
               </li>
             </ul>
+            <p className="mt-6 text-slate-500 text-base italic">
+              🎓 Bachelor of Science in Finance • University of Montana
+            </p>
           </div>
         </div>
       </section>
