@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react';
 import Aurora from '@/components/Aurora';
+import Navbar from '@/components/Navbar';
 import Image from 'next/image';
 
 export default function Home() {
@@ -26,6 +27,7 @@ export default function Home() {
 
   return (
     <main className="relative min-h-screen">
+      <Navbar />
       {/* Aurora Background */}
       <div style={{ width: '100%', height: '100%', position: 'fixed', top: 0, left: 0, zIndex: -1, backgroundColor: '#020617' }}>
         <Aurora
@@ -35,7 +37,7 @@ export default function Home() {
         />
       </div>
       {/* Hero Section */}
-      <section className="container mx-auto px-4 py-20 min-h-screen flex items-center">
+      <section className="container mx-auto px-4 pt-32 pb-20 min-h-screen flex items-center">
         <div className="max-w-5xl mx-auto w-full">
 
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-10 mb-8">
@@ -350,61 +352,64 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Project 2 - API Gateway */}
+            {/* Project 2 - Prokal */}
             <div className="relative">
               <div className="bg-slate-800/50 rounded-lg p-8 backdrop-blur-sm border border-slate-700/50 hover:border-red-500/50 transition-all">
                 <div className="mb-4">
                   <span className="text-red-500 font-mono text-sm">Featured Project</span>
                 </div>
                 <h3 className="text-2xl font-bold text-slate-100 mb-4">
-                  High-Performance API Gateway
+                  Prokal — Sports Prediction Market Analytics
                 </h3>
+
+                {/* Screenshot */}
+                <div className="mb-6 rounded-lg overflow-hidden border border-slate-700/50 max-w-3xl mx-auto">
+                  <a href="https://www.prokal.app" target="_blank" rel="noopener noreferrer">
+                    <Image
+                      src="/prokalhome.png"
+                      alt="Prokal app screenshot"
+                      width={1200}
+                      height={675}
+                      className="w-full opacity-80 hover:opacity-100 transition cursor-pointer"
+                    />
+                  </a>
+                </div>
+
                 <div className="bg-slate-900/80 rounded p-6 mb-6">
                   <p className="text-slate-400 leading-relaxed">
-                    Designed and implemented a RESTful API gateway handling 10k+ requests per minute
-                    for multiple clients. Built with FastAPI featuring JWT authentication, rate limiting,
-                    caching strategies, and comprehensive error handling. Optimized response times to
-                    under 100ms for 95% of requests through strategic database indexing and query optimization.
+                    A full-stack web app that surfaces opening odds, results, and underdog win rates
+                    from Kalshi prediction markets across 132 sports leagues. Users can query any league,
+                    analyze edge vs. market pricing, and export datasets as CSV for modeling. Built with
+                    per-user rate limiting, email-confirmed auth, protected routes, a waitlist system
+                    with social proof, and integrated feedback collection.
                   </p>
                 </div>
                 <ul className="flex flex-wrap gap-3 mb-6 font-mono text-sm text-slate-400">
-                  <li className="px-3 py-1 rounded border border-slate-700/50">Python</li>
+                  <li className="px-3 py-1 rounded border border-slate-700/50">Next.js 16</li>
+                  <li className="px-3 py-1 rounded border border-slate-700/50">TypeScript</li>
                   <li className="px-3 py-1 rounded border border-slate-700/50">FastAPI</li>
-                  <li className="px-3 py-1 rounded border border-slate-700/50">PostgreSQL</li>
-                  <li className="px-3 py-1 rounded border border-slate-700/50">Docker</li>
-                  <li className="px-3 py-1 rounded border border-slate-700/50">JWT</li>
-                  <li className="px-3 py-1 rounded border border-slate-700/50">AWS</li>
+                  <li className="px-3 py-1 rounded border border-slate-700/50">Supabase</li>
+                  <li className="px-3 py-1 rounded border border-slate-700/50">Kalshi API</li>
+                  <li className="px-3 py-1 rounded border border-slate-700/50">Resend</li>
+                  <li className="px-3 py-1 rounded border border-slate-700/50">Vercel</li>
+                  <li className="px-3 py-1 rounded border border-slate-700/50">Render</li>
                 </ul>
-
+                <div className="flex gap-6 flex-wrap">
+                  <a
+                    href="https://www.prokal.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 px-6 py-2 bg-red-500 text-white rounded hover:bg-red-600 transition-all font-mono text-sm"
+                  >
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                    Visit Live Site
+                  </a>
+                </div>
               </div>
             </div>
 
-            {/* Project 3 - Database Optimization */}
-            <div className="relative">
-              <div className="bg-slate-800/50 rounded-lg p-8 backdrop-blur-sm border border-slate-700/50 hover:border-red-500/50 transition-all">
-                <div className="mb-4">
-                  <span className="text-red-500 font-mono text-sm">Featured Project</span>
-                </div>
-                <h3 className="text-2xl font-bold text-slate-100 mb-4">
-                  Database Optimization System
-                </h3>
-                <div className="bg-slate-900/80 rounded p-6 mb-6">
-                  <p className="text-slate-400 leading-relaxed">
-                    Optimized database schema and queries for a system managing 50M+ records across
-                    multiple client projects. Implemented indexing strategies, query optimization, and
-                    connection pooling that reduced average query time by 70%. Designed efficient data
-                    models with proper normalization and denormalization strategies based on access patterns.
-                  </p>
-                </div>
-                <ul className="flex flex-wrap gap-3 mb-6 font-mono text-sm text-slate-400">
-                  <li className="px-3 py-1 rounded border border-slate-700/50">PostgreSQL</li>
-                  <li className="px-3 py-1 rounded border border-slate-700/50">MongoDB</li>
-                  <li className="px-3 py-1 rounded border border-slate-700/50">Node.js</li>
-                  <li className="px-3 py-1 rounded border border-slate-700/50">SQL</li>
-                  <li className="px-3 py-1 rounded border border-slate-700/50">Performance Tuning</li>
-                </ul>
-              </div>
-            </div>
           </div>
         </div>
       </section>
